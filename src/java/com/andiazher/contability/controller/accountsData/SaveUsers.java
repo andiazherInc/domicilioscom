@@ -61,6 +61,7 @@ public class SaveUsers extends HttpServlet {
                         JSONA auxJson= account.getJson();
                         auxJson.add("usuario", login.getDataOfLabel("usuario").toString() );
                         auxJson.add("rol", role.getDataOfLabel("name").toString() );
+                        auxJson.add("id",account.getId());
                         try (PrintWriter out = response.getWriter()) {
                             out.print(auxJson);
                         }                     
@@ -99,6 +100,7 @@ public class SaveUsers extends HttpServlet {
                         JSONA auxJson= account.getJson();
                         auxJson.add("usuario", login.getDataOfLabel("usuario").toString() );
                         auxJson.add("rol", role.getDataOfLabel("name").toString() );
+                        auxJson.add("id",account.getId());
                         try (PrintWriter out = response.getWriter()) {
                             out.print(auxJson);
                         }                     
@@ -146,6 +148,7 @@ public class SaveUsers extends HttpServlet {
                         JSONA auxJson= account.getJson();
                         auxJson.add("usuario", login.getDataOfLabel("usuario").toString() );
                         auxJson.add("rol", role.getDataOfLabel("name").toString() );
+                        auxJson.add("id",account.getId());
                         try (PrintWriter out = response.getWriter()) {
                             out.print(auxJson);
                         }                     
